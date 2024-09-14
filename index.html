@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starlight Unblocker</title>
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ebe6ef; /* Background color */
+    }
+
+    .banner {
+      position: relative;
+      text-align: center;
+      padding: 58px 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-image: url('https://thisiseducationalstufflol.neocities.org/starlight%20unblocker%20galaxy.png');
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+      margin-bottom: 5px; /* Reduced margin between banner and buttons */
+    }
+
+    .banner::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3); /* Darker overlay */
+      z-index: 1;
+    }
+
+    .banner img {
+      width: 80%;
+      max-width: 600px;
+      height: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .banner-line {
+      width: 100%;
+      height: 5px;
+      background-color: #842ee5;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+    }
+
+    .button-container {
+      text-align: center;
+      width: calc(100% - 40px);
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-top: -10px; /* Moved the buttons upwards */
+      padding: 10px 0;
+    }
+
+    .button {
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: transparent;
+      color: transparent;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 150px;
+      height: 150px;
+      display: inline-block;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    .button::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2); /* Dark overlay for feedback */
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .button:active::after {
+      opacity: 1; /* Show dark overlay when clicked */
+    }
+
+    /* New styles for the underlined text */
+    .free-dns {
+      position: absolute;
+      top: 20px; /* Adjust as needed */
+      left: 20px;
+      text-decoration: underline;
+      color: #40ccff; /* Baby blue color */
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 2; /* Ensure it's above the overlay */
+    }
+
+    .free-dns:hover {
+      text-decoration-style: dotted; /* Optional: change underline style on hover */
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="banner">
+    <div class="overlay"></div>
+    <img src="https://thisiseducationalstufflol.neocities.org/Untitled.png" alt="Starlight Unblocker Logo">
+    <div class="banner-line"></div>
+  </div>
+
+  <a href="https://freedns.afraid.org" target="_blank" class="free-dns">FreeDNS</a>
+
+  <div class="button-container" id="buttonContainer">
+    <button id="slope" class="button" style="background-image: url('https://i.ibb.co/wMrRc17/slope-image.png');"></button>
+    <button id="minecraft" class="button" style="background-image: url('https://i.ibb.co/ZzQC76X/minecraft-image.png');"></button>
+    <button id="gdsup" class="button" style="background-image: url('https://i.ibb.co/rtKnV86/lucky-image.png');"></button>
+  </div>
+
+  <script>
+    function openLink(url) {
+      window.location.href = url;
+    }
+
+    document.getElementById('slope').addEventListener('click', function () {
+      openLink("slope");
+    });
+
+    document.getElementById('minecraft').addEventListener('click', function () {
+      openLink("minecraft");
+    });
+
+    document.getElementById('gdsup').addEventListener('click', function () {
+      openLink("geometrydash");
+    });
+  </script>
+
+</body>
+
+</html>
